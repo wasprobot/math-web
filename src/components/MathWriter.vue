@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      <span ref="expression">y=</span>
+      <span ref="expression">type\ here</span>
     </p>
   </div>
 </template>

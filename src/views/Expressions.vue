@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <p>In the space given to the right, please type the math expressions you see on the left.</p>
     <ExpressionChallenge v-for="(e, index) in expressions" :key="index" :expression="e"/>
   </div>
 </template>
