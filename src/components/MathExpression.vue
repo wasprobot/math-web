@@ -11,20 +11,12 @@ import { getInterface } from "exports-loader?window.MathQuill!imports-loader?win
 import "mathquill/build/mathquill.css";
 
 export default {
-  name: "mathwriter",
-  data() {
-    return { typedLatex: null };
-  },
+  name: "mathexpression",
+  props: ["latex"],
   mounted() {
     var MQ = getInterface(2);
-    var mf = MQ.MathField(this.$refs["expression"], {
-      handlers: {
-        edit: () => {
-          this.typedLatex = mf.latex();
-          this.$emit("edit", mf.latex());
-        }
-      }
-    });
+    var mf = MQ.StaticMath(this.$refs["expression"]);
+    mf.latex(this.latex);
   }
 };
 </script>

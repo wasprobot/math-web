@@ -1,14 +1,5 @@
 <template>
-  <div class="home">
-    <MathWriter msg="Welcome to Your Vue.js App" />
+  <div class="about">
+    <h1>Now you're home</h1>
   </div>
 </template>
-
-<script>
-import MathWriter from "@/components/MathWriter.vue";
-
-export default {
-  name: "home",
-  components: { MathWriter }
-};
-</script>

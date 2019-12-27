@@ -2,11 +2,15 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
+      <router-link to="/expressions">Expressions</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
   </div>
 </template>
+
+<style src="vue-material/dist/vue-material.min.css"></style>
+<style src="vue-material/dist/theme/default.css"></style>
 
 <style>
 #app {
