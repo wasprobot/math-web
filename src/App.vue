@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/expressions">Expressions</router-link> |
+      <router-link to="/gcd">Gcd algorithm</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
